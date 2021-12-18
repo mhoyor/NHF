@@ -1,0 +1,389 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background: steelblue;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+.topnav {
+  position: fixed;
+  /* overflow: hidden; */
+  z-index: 999;
+  width: 100%;
+  /* <!-- background-color: hsl(295, 87%, 3%);--> */
+   background-blend-mode: lighten;
+  background-color: rgba(5, 1, 17, 0.953);
+  transition: all 0.3s ease;
+  
+}
+.topnav.sticky{
+  background-color: rgba(5, 1, 17, 0.953);
+  padding: 40px 0;
+}
+
+.topnav .max-width {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+.max-width {
+  max-width: 1300px;
+  margin: auto;
+}
+ .topnav a {
+  
+  color: #f4f4f5fd;
+  text-align: bottom;
+  /* padding-top:0em; */
+  /* padding: 4px 1em; */
+  text-decoration: none;
+  font-size: 0.8em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+}
+.topnav .menu li {
+  list-style: none;
+  display: inline-block;
+
+}
+.topnav .menu li a {
+  display: block;
+  color: #fff;
+  /* font-size: 18px;
+  font-weight: 500; */
+  margin-left: 25px;
+  transition: color 0.3s ease;
+  float: right;
+}
+
+.topnav .menu li a:hover {
+  border-bottom: solid;
+  color: rgba(5, 1, 17, 0.953);
+  /* rgba(57, 235, 13, 0.741);--> */
+  opacity: 3;
+}
+.topnav .sticky .menu li a:hover{
+  color: #fff;
+  border-bottom: 3px;
+  border-bottom: ease;
+  border-bottom: solid;
+}
+.menu a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.Tourneys {
+  display: flex;
+  padding-bottom: 1em;
+  margin: 0em 2em
+}
+.intro {
+  display: flex;
+  background-color: rgba(5, 1, 17, 0.953);
+  padding-top: 5em;
+  padding-bottom:3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.125rem;
+  font-family: "Poppins", sans-serif;
+ 
+}
+.MTeams {
+  display: flex;
+  /* background-color: rgba(5, 1, 17, 0.953); */
+  /* background-size: cover; */
+ padding: 2em 1em 3em 1em;
+  /* padding-bottom: 40px; */
+  /* margin: auto; */
+  justify-content: space-evenly;
+}
+.WTeams {
+  display: flex;
+  /* background-color: rgba(5, 1, 17, 0.953); */
+  margin-top: 2em;
+  padding: 2em 1em 3em 1em;
+  justify-content: space-evenly;
+  /* background-size: cover; */
+  /* padding-bottom: 40px; */
+
+  
+}
+h1 {
+  padding-top: 1em
+  color: cornsilk;
+  font-size: 1rem
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button:hover {
+  background: none; /* Green */
+  color: white;
+    border-color: rgba(5, 1, 17, 0.953);
+}
+button {
+  border-radius: 10px;
+  position: relative;
+  font-size: 1em;
+  padding: 1em;
+  color: rgb(105, 238, 10);
+  background-color: rgb(39, 60, 128);
+  border-color: rgba(5, 1, 17, 0.953);
+  
+}
+.introcolumn {
+  padding-left: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+  color: oldlace;
+  margin: auto;
+  
+}
+.MTeamscolumn {
+  padding-left: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-left: 1em;
+  /* border: 30px;
+  border-color: rgb(154, 255, 71);
+  border: solid; */
+}
+.WTeamscolumn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-left: 2em;
+  /* border: 30px;
+  border-color: rgb(154, 255, 71);
+  border:solid; */
+  padding-left: 2em;
+}
+.Leagues {
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  padding: 0em 1em;
+  text-align: justify;
+  margin-top: 1em;
+  margin-right:1em;
+  margin-left: auto;
+  color: white;
+  background-color: rgba(5, 1, 17, 0.953);
+}
+
+.AboutourTeam {
+  border-bottom: solid;
+  margin-top: 1em;
+  border-color: white;
+  padding-left: auto;
+  padding-bottom: auto;
+  margin: 1em 2em 0em;
+  text-align: left;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-size: smaller;
+}
+footer {
+  background-color: rgba(5, 1, 17, 0.953);
+  /* Add padding around the footer as well */
+  padding: 1em 1em;
+  margin-top: 3em;
+}
+
+footer a {
+  color: white;
+  margin: 0 ;
+}
+/* Mobile devices */
+
+/* box-sizing: border-box;
+
+Position the image container (needed to position the left and right arrows)
+.container {
+  position: relative;
+  top: -250px;
+  left: 650px;
+  width: 600px;
+  border: 10px solid #c9d6b5;
+}
+
+/* Hide the images by default */
+/* .mySlides {
+  display: none; */
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+/* .cursor {
+  cursor: pointer;
+} */
+
+/* /* Next & previous buttons */
+/* .prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+} */
+
+/* /* Position the "next button" to the right */
+/* .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+} */
+
+/* /* On hover, add a black background color with a little bit see-through */
+/* .prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+} */
+
+/* /* Number text (1/3 etc) */
+/* .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+} */
+/* Container for image text  */
+/* .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Six columns side by side*/
+/* .column {
+  float: left;
+  width: 16.66%;
+} */
+
+/* Add a transparency effect for thumnbail images*/
+/* .demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;} */
+@media (max-width: 1104px) {
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+  .topnav .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background:steelblue;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+  .topnav .menu.active {
+    left: 0;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .topnav .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  .home .home-content .text-2 {
+    font-size: 70px;
+  }
+  .home .home-content .text-3 {
+    font-size: 35px;
+  }
+  .home .home-content a {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+  .max-width {
+    max-width: 930px;
+  }
+  .intro,
+  .Tourneys {
+    width: 100%;
+    display: inline-block;
+    justify-content: center;
+    
+    
+  }
+  .intro{
+    margin-left: -40px;
+  }
+
+
+  .intro .introcolumn .introimg{
+    width: 450px;
+    
+    
+  }
+  .about .about-content .right {
+    flex: 100%;
+  }
+  .services .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  .skills .skills-content .column,
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
+  .home .home-content .text-2 {
+    font-size: 60px;
+  }
+  .home .home-content .text-3 {
+    font-size: 32px;
+  }
+  .home .home-content a {
+    font-size: 20px;
+  }
+  .services .serv-content .card {
+    width: 100%;
+  }
+}
